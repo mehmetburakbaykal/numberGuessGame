@@ -10,27 +10,30 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap"
       rel="stylesheet"
     />
-    <title>Number Guess</title>
+    <title>Guess The Number</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="input-container">
       <h1>Guess The Number</h1>
-      <h3>Guess the number between 1-100. You have 5 guesses.</h3>
+      <h3>Guess the number between 0-100. You have 5 guesses.</h3>
       <input
         type="text"
         name="guess"
         id="guess-input"
         placeholder="Your Guess"
       />
+      <button class="submit-btn">Submit</button>
     </div>
     <div class="guess-container">
-      <h2>too high</h2>
+      <h2 class="high range hidden">too high</h2>
+      <h2 class="low range hidden">too low</h2>
       <h3>Your Guesses =</h3>
       <h3>You have X guesses.</h3>
       <h1>You win</h1>
       <h1>You lose</h1>
     </div>
+    <button class="reset-btn">RESET</button>
   </body>
   <script src="app.js"></script>
 </html>
