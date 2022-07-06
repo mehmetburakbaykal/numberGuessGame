@@ -16,22 +16,22 @@
   <body>
     <div class="input-container">
       <h1>Guess The Number</h1>
-      <h3>Guess the number between 0-100. You have 5 guesses.</h3>
+      <h3>Guess the number between 1-100. You have 5 guesses.</h3>
       <input
         type="text"
         name="guess"
         id="guess-input"
         placeholder="Your Guess"
       />
-      <button class="submit-btn">Submit</button>
+      <button class="submit-btn hidden">Submit</button>
     </div>
     <div class="guess-container">
       <h2 class="high range hidden">too high</h2>
       <h2 class="low range hidden">too low</h2>
-      <h3>Your Guesses =</h3>
-      <h3>You have X guesses.</h3>
-      <h1>You win</h1>
-      <h1>You lose</h1>
+      <h3>Your Guesses = <span class="guesses"></span></h3>
+      <!-- <h3>You have <span class="guess-counter"></span> guesses.</h3> -->
+      <h1 class="win after hidden">You win</h1>
+      <h1 class="lose after hidden">You lose</h1>
     </div>
     <button class="reset-btn">RESET</button>
   </body>
